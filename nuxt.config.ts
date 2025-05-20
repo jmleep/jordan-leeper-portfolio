@@ -10,5 +10,14 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/css/globals.css";'
+        }
+      }
+    }
   }
 })
